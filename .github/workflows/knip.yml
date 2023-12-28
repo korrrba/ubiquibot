@@ -3,7 +3,10 @@ name: Knip
 on:
   pull_request:
 
-permissions: write-all
+permissions:
+  checks: write
+  issues: write
+  pull-requests: write
 
 jobs:
   run-knip:

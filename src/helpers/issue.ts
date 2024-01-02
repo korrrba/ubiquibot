@@ -44,6 +44,10 @@ export async function clearAllPriceLabelsOnIssue(context: Context) {
   }
 }
 
+export function unusedFunction(context: Context) {
+  const payload = context.payload;
+}
+
 export async function addLabelToIssue(context: Context, labelName: string) {
   const payload = context.payload;
   if (!payload.issue) {
